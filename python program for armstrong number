@@ -1,0 +1,16 @@
+def armstrong(num):
+    sum=0
+    num=str(num)
+    length=len(num)
+    for i in range(length):
+        arms=int(num[i])**length
+        sum=sum+arms
+    print(sum)
+    return sum
+
+num = int(input("enter number to check for armstrong"))
+x=armstrong(num)
+if x==num:
+    print(str(num)+" is Armstrong number")
+else:
+    print(str(num)+" is not an Armstrong number")
